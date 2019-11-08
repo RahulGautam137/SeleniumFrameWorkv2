@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="8795" started-at="2019-10-02T17:11:30 IST" finished-at="2019-10-02T17:11:39 IST">
+    <groups>
+    </groups>
+    <test name="SeleniumFrameWork" duration-ms="8795" started-at="2019-10-02T17:11:30 IST" finished-at="2019-10-02T17:11:39 IST">
+      <class name="main.java.base.BaseTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:main.java.base.BaseTest@458c1321]" name="setUp" is-config="true" duration-ms="14695" started-at="2019-10-02T17:11:15 IST" finished-at="2019-10-02T17:11:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="LoginAsBankManger()[pri:0, instance:main.java.base.BaseTest@458c1321]" name="LoginAsBankManger" duration-ms="8746" started-at="2019-10-02T17:11:30 IST" finished-at="2019-10-02T17:11:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAsBankManger -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.java.base.BaseTest@458c1321]" name="tearDown" is-config="true" duration-ms="819" started-at="2019-10-02T17:11:39 IST" finished-at="2019-10-02T17:11:40 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.java.base.BaseTest -->
+    </test> <!-- SeleniumFrameWork -->
+  </suite> <!-- Default Suite -->
+</testng-results>

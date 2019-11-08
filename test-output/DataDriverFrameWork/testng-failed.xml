@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DataDriverFrameWork]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="testngTest1(failed)">
+    <classes>
+      <class name="main.java.base.BaseTest">
+        <methods>
+          <include name="LoginAsBankManger"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- main.java.base.BaseTest -->
+    </classes>
+  </test> <!-- testngTest1(failed) -->
+</suite> <!-- Failed suite [DataDriverFrameWork] -->

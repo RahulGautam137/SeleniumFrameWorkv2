@@ -1,0 +1,250 @@
+﻿17:58:44,769 DEBUG devpinoyLogger:33  Hello Logging
+17:58:44,774 DEBUG devpinoyLogger:34  Hello Logging2
+17:58:44,775 DEBUG devpinoyLogger:35  Hello Logging3
+18:01:11,237 DEBUG devpinoyLogger:33  Hello Logging
+18:01:11,243 DEBUG devpinoyLogger:34  Hello Logging2
+18:01:11,243 DEBUG devpinoyLogger:35  Hello Logging3
+18:02:04,725 DEBUG devpinoyLogger:33  Hello Logging
+18:02:04,737 DEBUG devpinoyLogger:34  Hello Logging2
+18:02:04,737 DEBUG devpinoyLogger:35  Hello Logging3
+02:47:56,769 DEBUG devpinoyLogger:35  Hello Logging
+02:47:56,778 DEBUG devpinoyLogger:36  Hello Logging2
+02:47:56,778 DEBUG devpinoyLogger:37  Hello Logging3
+02:54:02,119 DEBUG devpinoyLogger:35  Hello Logging
+02:54:02,133 DEBUG devpinoyLogger:36  Hello Logging2
+02:54:02,134 DEBUG devpinoyLogger:37  Hello Logging3
+02:56:28,851 DEBUG devpinoyLogger:35  Hello Logging
+02:56:28,851 DEBUG devpinoyLogger:36  Hello Logging2
+02:56:28,851 DEBUG devpinoyLogger:37  Hello Logging3
+02:58:14,134 DEBUG devpinoyLogger:36  Hello Logging
+02:58:14,140 DEBUG devpinoyLogger:37  Hello Logging2
+02:58:14,141 DEBUG devpinoyLogger:38  Hello Logging3
+02:58:24,253 DEBUG devpinoyLogger:14  Element is Present
+02:58:24,273 DEBUG devpinoyLogger:14  Element is Present
+03:01:14,262 DEBUG devpinoyLogger:36  Hello Logging
+03:01:14,270 DEBUG devpinoyLogger:37  Hello Logging2
+03:01:14,271 DEBUG devpinoyLogger:38  Hello Logging3
+03:01:25,666 DEBUG devpinoyLogger:14  Element is Present
+03:01:25,685 DEBUG devpinoyLogger:14  Element is Present
+01:03:08,464 DEBUG devpinoyLogger:39  Hello Logging
+01:03:08,496 DEBUG devpinoyLogger:40  Hello Logging2
+01:03:08,496 DEBUG devpinoyLogger:41  Hello Logging3
+01:03:43,858 DEBUG devpinoyLogger:14  Element is Present
+01:05:15,221 DEBUG devpinoyLogger:39  Hello Logging
+01:05:15,229 DEBUG devpinoyLogger:40  Hello Logging2
+01:05:15,229 DEBUG devpinoyLogger:41  Hello Logging3
+01:05:32,762 DEBUG devpinoyLogger:14  Element is Present
+01:05:58,773 DEBUG devpinoyLogger:39  Hello Logging
+01:05:58,777 DEBUG devpinoyLogger:40  Hello Logging2
+01:05:58,777 DEBUG devpinoyLogger:41  Hello Logging3
+01:06:13,614 DEBUG devpinoyLogger:14  Element is Present
+01:10:37,578 DEBUG devpinoyLogger:39  Hello Logging
+01:10:37,586 DEBUG devpinoyLogger:40  Hello Logging2
+01:10:37,586 DEBUG devpinoyLogger:41  Hello Logging3
+01:10:55,087 DEBUG devpinoyLogger:14  Element is Present
+01:18:49,249 DEBUG devpinoyLogger:39  Hello Logging
+01:18:49,253 DEBUG devpinoyLogger:40  Hello Logging2
+01:18:49,253 DEBUG devpinoyLogger:41  Hello Logging3
+01:19:05,047 DEBUG devpinoyLogger:14  Element is Present
+01:33:35,290 DEBUG devpinoyLogger:39  Hello Logging
+01:33:35,319 DEBUG devpinoyLogger:40  Hello Logging2
+01:33:35,321 DEBUG devpinoyLogger:41  Hello Logging3
+01:33:57,901 DEBUG devpinoyLogger:14  Element is Present
+01:35:59,586 DEBUG devpinoyLogger:39  Hello Logging
+01:35:59,594 DEBUG devpinoyLogger:40  Hello Logging2
+01:35:59,595 DEBUG devpinoyLogger:41  Hello Logging3
+01:36:15,882 DEBUG devpinoyLogger:14  Element is Present
+17:20:27,599 DEBUG devpinoyLogger:41  Hello Logging
+17:20:27,631 DEBUG devpinoyLogger:42  Hello Logging2
+17:20:27,631 DEBUG devpinoyLogger:43  Hello Logging3
+17:20:50,329 DEBUG devpinoyLogger:14  Element is Present
+17:31:24,227 DEBUG devpinoyLogger:41 ? Hello Logging
+17:31:24,253 DEBUG devpinoyLogger:42 ? Hello Logging2
+17:31:24,253 DEBUG devpinoyLogger:43 ? Hello Logging3
+17:31:51,576 DEBUG devpinoyLogger:14 ? Element is Present
+17:34:39,814 DEBUG devpinoyLogger:41 ? Hello Logging
+17:34:39,822 DEBUG devpinoyLogger:42 ? Hello Logging2
+17:34:39,823 DEBUG devpinoyLogger:43 ? Hello Logging3
+17:34:54,356 DEBUG devpinoyLogger:14 ? Element is Present
+17:38:22,349 DEBUG devpinoyLogger:41 ? Hello Logging
+17:38:22,357 DEBUG devpinoyLogger:42 ? Hello Logging2
+17:38:22,357 DEBUG devpinoyLogger:43 ? Hello Logging3
+17:38:36,339 DEBUG devpinoyLogger:14 ? Element is Present
+02:40:27,685 DEBUG devpinoyLogger:41  Hello Logging
+02:40:27,725 DEBUG devpinoyLogger:42  Hello Logging2
+02:40:27,726 DEBUG devpinoyLogger:43  Hello Logging3
+02:43:44,540 DEBUG devpinoyLogger:41  Hello Logging
+02:43:44,547 DEBUG devpinoyLogger:42  Hello Logging2
+02:43:44,547 DEBUG devpinoyLogger:43  Hello Logging3
+02:51:18,174 DEBUG devpinoyLogger:41 ? Hello Logging
+02:51:18,181 DEBUG devpinoyLogger:42 ? Hello Logging2
+02:51:18,181 DEBUG devpinoyLogger:43 ? Hello Logging3
+02:51:45,357 DEBUG devpinoyLogger:41  Hello Logging
+02:51:45,366 DEBUG devpinoyLogger:42  Hello Logging2
+02:51:45,367 DEBUG devpinoyLogger:43  Hello Logging3
+02:56:36,602 DEBUG devpinoyLogger:41  Hello Logging
+02:56:36,611 DEBUG devpinoyLogger:42  Hello Logging2
+02:56:36,612 DEBUG devpinoyLogger:43  Hello Logging3
+03:07:36,177 DEBUG devpinoyLogger:41 ? Hello Logging
+03:07:36,214 DEBUG devpinoyLogger:42 ? Hello Logging2
+03:07:36,215 DEBUG devpinoyLogger:43 ? Hello Logging3
+03:14:01,204 DEBUG devpinoyLogger:41  Hello Logging
+03:14:01,212 DEBUG devpinoyLogger:42  Hello Logging2
+03:14:01,213 DEBUG devpinoyLogger:43  Hello Logging3
+03:18:50,640 DEBUG devpinoyLogger:41  Hello Logging
+03:18:50,645 DEBUG devpinoyLogger:42  Hello Logging2
+03:18:50,646 DEBUG devpinoyLogger:43  Hello Logging3
+03:21:15,861 DEBUG devpinoyLogger:41  Hello Logging
+03:21:15,868 DEBUG devpinoyLogger:42  Hello Logging2
+03:21:15,868 DEBUG devpinoyLogger:43  Hello Logging3
+03:23:50,203 DEBUG devpinoyLogger:41  Hello Logging
+03:23:50,207 DEBUG devpinoyLogger:42  Hello Logging2
+03:23:50,208 DEBUG devpinoyLogger:43  Hello Logging3
+03:24:15,979 DEBUG devpinoyLogger:14  Element is Present
+16:35:38,033 DEBUG devpinoyLogger:41  Hello Logging
+16:35:38,064 DEBUG devpinoyLogger:42  Hello Logging2
+16:35:38,064 DEBUG devpinoyLogger:43  Hello Logging3
+16:36:07,289 DEBUG devpinoyLogger:16  Element is Present
+16:40:48,026 DEBUG devpinoyLogger:41  Hello Logging
+16:40:48,026 DEBUG devpinoyLogger:42  Hello Logging2
+16:40:48,026 DEBUG devpinoyLogger:43  Hello Logging3
+16:41:02,690 DEBUG devpinoyLogger:16  Element is Present
+16:51:02,373 DEBUG devpinoyLogger:41  Hello Logging
+16:51:02,388 DEBUG devpinoyLogger:42  Hello Logging2
+16:51:02,388 DEBUG devpinoyLogger:43  Hello Logging3
+16:51:16,206 DEBUG devpinoyLogger:16  Element is Present
+16:56:30,221 DEBUG devpinoyLogger:41  Hello Logging
+16:56:30,225 DEBUG devpinoyLogger:42  Hello Logging2
+16:56:30,226 DEBUG devpinoyLogger:43  Hello Logging3
+16:56:45,584 DEBUG devpinoyLogger:16  Element is Present
+16:58:18,179 DEBUG devpinoyLogger:41  Hello Logging
+16:58:18,184 DEBUG devpinoyLogger:42  Hello Logging2
+16:58:18,185 DEBUG devpinoyLogger:43  Hello Logging3
+16:58:31,992 DEBUG devpinoyLogger:16  Element is Present
+17:11:15,679 DEBUG devpinoyLogger:41  Hello Logging
+17:11:15,694 DEBUG devpinoyLogger:42  Hello Logging2
+17:11:15,694 DEBUG devpinoyLogger:43  Hello Logging3
+17:11:30,418 DEBUG devpinoyLogger:18  Element is Present
+17:21:12,889 DEBUG devpinoyLogger:49 ? Hello Logging
+17:21:12,925 DEBUG devpinoyLogger:50 ? Hello Logging2
+17:21:12,925 DEBUG devpinoyLogger:51 ? Hello Logging3
+17:21:41,851 DEBUG devpinoyLogger:18 ? Element is Present
+17:21:52,091 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+17:21:52,091 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+17:21:52,095 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+17:21:52,095 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+17:21:52,099 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+17:54:12,955 DEBUG devpinoyLogger:49 ? Hello Logging
+17:54:13,003 DEBUG devpinoyLogger:50 ? Hello Logging2
+17:54:13,003 DEBUG devpinoyLogger:51 ? Hello Logging3
+17:54:36,221 DEBUG devpinoyLogger:18 ? Element is Present
+17:54:46,396 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+17:54:46,400 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+17:54:46,400 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+17:54:46,404 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+17:54:46,404 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+17:58:49,094 DEBUG devpinoyLogger:49 ? Hello Logging
+17:58:49,098 DEBUG devpinoyLogger:50 ? Hello Logging2
+17:58:49,098 DEBUG devpinoyLogger:51 ? Hello Logging3
+17:59:05,700 DEBUG devpinoyLogger:18 ? Element is Present
+17:59:16,630 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+17:59:16,630 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+17:59:16,634 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+17:59:16,634 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+17:59:16,634 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:17:37,565 DEBUG devpinoyLogger:49 ? Hello Logging
+18:17:37,648 DEBUG devpinoyLogger:50 ? Hello Logging2
+18:17:37,648 DEBUG devpinoyLogger:51 ? Hello Logging3
+18:18:01,348 DEBUG devpinoyLogger:18 ? Element is Present
+18:18:11,139 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:18:11,141 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:18:11,145 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:18:11,147 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:18:11,148 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:28:23,829 DEBUG devpinoyLogger:49 ? Hello Logging
+18:28:23,837 DEBUG devpinoyLogger:50 ? Hello Logging2
+18:28:23,837 DEBUG devpinoyLogger:51 ? Hello Logging3
+18:28:37,787 DEBUG devpinoyLogger:18 ? Element is Present
+18:28:49,108 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:28:49,109 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:28:49,112 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:28:49,113 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:28:49,114 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:36:10,656 DEBUG devpinoyLogger:49 ? Hello Logging
+18:36:10,663 DEBUG devpinoyLogger:50 ? Hello Logging2
+18:36:10,663 DEBUG devpinoyLogger:51 ? Hello Logging3
+18:36:23,497 DEBUG devpinoyLogger:18 ? Element is Present
+18:36:32,338 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:36:32,340 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:36:32,343 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:36:32,344 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:36:32,345 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:36:32,794 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:36:32,795 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:36:32,796 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:36:32,797 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:36:32,797 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:42:12,209 DEBUG devpinoyLogger:49 ? Hello Logging
+18:42:12,216 DEBUG devpinoyLogger:50 ? Hello Logging2
+18:42:12,217 DEBUG devpinoyLogger:51 ? Hello Logging3
+18:42:25,385 DEBUG devpinoyLogger:18 ? Element is Present
+18:42:34,374 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:42:34,376 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:42:34,378 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:42:34,379 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:42:34,380 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:50:10,835 DEBUG devpinoyLogger:49 ? Hello Logging
+18:50:10,841 DEBUG devpinoyLogger:50 ? Hello Logging2
+18:50:10,841 DEBUG devpinoyLogger:51 ? Hello Logging3
+18:50:24,658 DEBUG devpinoyLogger:18 ? Element is Present
+18:50:33,546 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:50:33,548 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:50:33,551 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:50:33,553 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:50:33,553 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:50:33,956 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:50:33,957 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:50:33,957 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:50:33,959 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:50:33,960 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:57:13,451 DEBUG devpinoyLogger:49 ? Hello Logging
+18:57:13,457 DEBUG devpinoyLogger:50 ? Hello Logging2
+18:57:13,457 DEBUG devpinoyLogger:51 ? Hello Logging3
+18:57:26,428 DEBUG devpinoyLogger:18 ? Element is Present
+18:57:31,310 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:57:31,313 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:57:31,316 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:57:31,317 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:57:31,318 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:57:31,818 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:57:31,820 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:57:31,820 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:57:31,821 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:57:31,822 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+18:58:48,268 DEBUG devpinoyLogger:49 ? Hello Logging
+18:58:48,275 DEBUG devpinoyLogger:50 ? Hello Logging2
+18:58:48,275 DEBUG devpinoyLogger:51 ? Hello Logging3
+18:59:01,842 DEBUG devpinoyLogger:18 ? Element is Present
+18:59:06,777 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+18:59:06,779 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+18:59:06,781 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+18:59:06,782 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+18:59:06,783 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+19:06:06,383 DEBUG devpinoyLogger:49 ? Hello Logging
+19:06:06,389 DEBUG devpinoyLogger:50 ? Hello Logging2
+19:06:06,389 DEBUG devpinoyLogger:51 ? Hello Logging3
+19:06:21,849 DEBUG devpinoyLogger:18 ? Element is Present
+19:06:26,756 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+19:06:26,758 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+19:06:26,762 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+19:06:26,763 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+19:06:26,764 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+15:34:23,878 DEBUG devpinoyLogger:49 ? Hello Logging
+15:34:23,957 DEBUG devpinoyLogger:50 ? Hello Logging2
+15:34:23,958 DEBUG devpinoyLogger:51 ? Hello Logging3
+15:35:04,944 DEBUG devpinoyLogger:18 ? Element is Present
+15:35:11,376 DEBUG cache:45 ? Couldn't find template in cache for "Extent.ftl"("en_US", UTF-8, parsed); will try to load it.
+15:35:11,378 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en_US.ftl"): Not found
+15:35:11,381 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
+15:35:11,383 DEBUG cache:45 ? TemplateLoader.findTemplateSource("Extent.ftl"): Found
+15:35:11,383 DEBUG cache:45 ? Loading template for "Extent.ftl"("en_US", UTF-8, parsed) from "jar:file:/C:/Users/Rahul/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
