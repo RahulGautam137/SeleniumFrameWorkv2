@@ -4,7 +4,6 @@ import org.apache.commons.compress.compressors.FileNameUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
-
 import java.io.*;
 import java.time.LocalDateTime;
 

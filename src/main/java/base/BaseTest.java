@@ -1,7 +1,7 @@
 package main.java.base;
 
+import com.aventstack.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import main.java.assist.Util;
 import org.openqa.selenium.By;
@@ -16,13 +16,13 @@ public class BaseTest extends BasePage{
     public void LoginAsBankManger(){
 
     try {
-           ExtentTest test2= logger.startTest("login as bank manager");
+           ExtentTest test2= logger.createTest("login as bank manager");
             Assert.assertTrue(util.isElementPresent(driver, log, By.xpath(objectRepos.getProperty("customerLoginBtn"))), "Customer login was Present");
-            test2.log(LogStatus.PASS,"Hello bettjnjnn");
+            test2.pass("Hello bettjnjnn");
             driver.findElement(By.xpath(objectRepos.getProperty("customerLoginBtn"))).click();
             Thread.sleep(4000);
-            test2.log(LogStatus.PASS,"ygygyh");
-            test2.addScreenCapture(util.captureScreenshot(driver));
+            test2.pass("ygygyh");
+            test2.addScreenCaptureFromPath(util.captureScreenshot(driver));
 
 
 

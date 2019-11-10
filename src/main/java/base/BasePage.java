@@ -1,8 +1,10 @@
 package main.java.base;
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentAventReporter;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import main.java.assist.ExcelReader;
 import main.java.assist.Util;
 import org.apache.log4j.Logger;
@@ -39,13 +41,16 @@ public class BasePage {
                 if(driver==null) {
                    //
                     util=new Util();
-                    logger=new ExtentReports("C:\\Users\\Rahul\\IdeaProjects\\SeleniumFrameWork\\src\\main\\java\\report\\reports.html");
-                    test=logger.startTest("initialise");
+                    ExtentHtmlReporter avent = new ExtentHtmlReporter("C:\\Users\\Rahul\\IdeaProjects\\SeleniumFrameWork\\src\\main\\java\\report\\aventreports.html");
+                    logger=new ExtentReports();
+                    logger.attachReporter(avent);
+                    test=logger.createTest("first Test","First Test Description");
+
                     config = new Properties();
                     objectRepos = new Properties();
                     System.out.println(System.getProperty("user.dir"));
                     FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//propertiesfiles//Config.properties");
-                    test.log(LogStatus.PASS,"Passing the function");
+                    test.pass("Hello Passing this test");
                     log.debug("Hello Logging");
                     log.debug("Hello Logging2");
                     log.debug("Hello Logging3");
@@ -57,7 +62,7 @@ public class BasePage {
 
                     if(config.getProperty("browser").equalsIgnoreCase("chrome")){
                         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//main//resources//chromedriver.exe");
-                        test.log(LogStatus.PASS,"Passing the function");
+                        test.pass("Passing the function");
                         System.out.println("Inside chrome driver if");
                         driver=new ChromeDriver();
 

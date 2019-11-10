@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="DataDriverFrameWork" duration-ms="949" started-at="2019-09-22T03:24:15 IST" finished-at="2019-09-22T03:24:16 IST">
+  <suite name="DataDriverFrameWork" duration-ms="5246" started-at="2019-11-10T17:40:27 IST" finished-at="2019-11-10T17:40:32 IST">
     <groups>
     </groups>
-    <test name="testngTest1" duration-ms="949" started-at="2019-09-22T03:24:15 IST" finished-at="2019-09-22T03:24:16 IST">
+    <test name="testngTest1" duration-ms="5246" started-at="2019-11-10T17:40:27 IST" finished-at="2019-11-10T17:40:32 IST">
       <class name="main.java.base.BaseTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:main.java.base.BaseTest@4493d195]" name="setUp" is-config="true" duration-ms="25495" started-at="2019-09-22T03:23:50 IST" finished-at="2019-09-22T03:24:15 IST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:main.java.base.BaseTest@2f943d71]" name="setUp" is-config="true" duration-ms="14528" started-at="2019-11-10T17:40:12 IST" finished-at="2019-11-10T17:40:27 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="LoginAsBankManger()[pri:0, instance:main.java.base.BaseTest@4493d195]" name="LoginAsBankManger" duration-ms="900" started-at="2019-09-22T03:24:15 IST" finished-at="2019-09-22T03:24:16 IST">
+        <test-method status="PASS" signature="LoginAsBankManger()[pri:0, instance:main.java.base.BaseTest@2f943d71]" name="LoginAsBankManger" duration-ms="4846" started-at="2019-11-10T17:40:27 IST" finished-at="2019-11-10T17:40:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAsBankManger -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.java.base.BaseTest@4493d195]" name="tearDown" is-config="true" duration-ms="947" started-at="2019-09-22T03:24:16 IST" finished-at="2019-09-22T03:24:17 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:main.java.base.BaseTest@2f943d71]" name="tearDown" is-config="true" duration-ms="3413" started-at="2019-11-10T17:40:33 IST" finished-at="2019-11-10T17:40:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

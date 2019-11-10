@@ -4,6 +4,7 @@
   <listeners>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="main.java.assist.ListenerImplementation"/>
   </listeners>
   <test thread-count="5" name="testngTest1(failed)">
     <classes>
