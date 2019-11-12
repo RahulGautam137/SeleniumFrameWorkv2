@@ -41,12 +41,13 @@ public class BasePage {
                 if(driver==null) {
                    //
                     util=new Util();
+                    config = new Properties();
                     ExtentHtmlReporter avent = new ExtentHtmlReporter("C:\\Users\\Rahul\\IdeaProjects\\SeleniumFrameWork\\src\\main\\java\\report\\aventreports.html");
                     logger=new ExtentReports();
                     logger.attachReporter(avent);
                     test=logger.createTest("first Test","First Test Description");
 
-                    config = new Properties();
+
                     objectRepos = new Properties();
                     System.out.println(System.getProperty("user.dir"));
                     FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//propertiesfiles//Config.properties");
