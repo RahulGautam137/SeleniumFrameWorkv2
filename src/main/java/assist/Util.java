@@ -1,5 +1,6 @@
 package main.java.assist;
-import com.relevantcodes.extentreports.ExtentTest;
+
+import com.aventstack.extentreports.ExtentTest;
 import org.apache.commons.compress.compressors.FileNameUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -10,25 +11,24 @@ import java.time.LocalDateTime;
 
 public class  Util {
 
-    public boolean isElementPresent(WebDriver driver, Logger log,By by ){
-        try{
+    public boolean isElementPresent(ExtentTest testLogger, WebDriver driver, By by ) {
+
+            try {
 
                 driver.findElement(by);
-                log.debug("Element is Present");
+                testLogger.info("Element is Present");
                 return true;
-
-
-
-        }catch(NoSuchElementException e){
-            log.debug("Element is not Present");
-            return false;
-
-        }catch (Exception t){
-            log.debug("Exception found"+t);
-            return false;
-        }
+            } catch (ElementNotVisibleException notVisible) {
+                testLogger.info("Element is not Present");
+                return false;
+            } catch (Exception e) {
+                e.printStackTrace();
+                testLogger.info("Element " + by + "is not visible to user");
+                return false;
+            }
 
     }
+
 
     public String captureScreenshot( WebDriver driver){
 //ExtentTest logger,
