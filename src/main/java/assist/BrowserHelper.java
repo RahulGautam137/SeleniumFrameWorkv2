@@ -25,7 +25,7 @@ public class BrowserHelper {
             case "chrome"   :   System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//main//resources//chromedriver.exe");
                                 ChromeOptions options=new ChromeOptions();
                                 options.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
-                                options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//symatec.crx"));
+                                //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//symatec.crx"));
                                 driver=new ChromeDriver(options);
 
 

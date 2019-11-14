@@ -16,13 +16,15 @@ public class BaseTest extends BasePage{
     public void LoginAsBankManger(){
 
     try {
+
             ExtentTest testLogger= extentRep.createTest("login as bank manager");
-            Assert.assertTrue(util.isElementPresent(driver, log, By.xpath(objectRepos.getProperty("customerLoginBtn"))), "Customer login was Present");
-            testLogger.pass("Hello bettjnjnn");
+            browserHelper.navigateToURL(testLogger,config.getProperty("testUrl"));
+            util.isElementPresent(testLogger,driver,By.xpath(objectRepos.getProperty("bankManagerLoginBtn")));
+            testLogger.pass("Start");
             driver.findElement(By.xpath(objectRepos.getProperty("customerLoginBtn"))).click();
             Thread.sleep(4000);
-            testLogger.pass("ygygyh");
-            testLogger.addScreenCaptureFromPath(util.captureScreenshot(driver));
+            testLogger.pass("Passing this test case");
+            util.captureScreenshot(testLogger,driver);
 
 
 

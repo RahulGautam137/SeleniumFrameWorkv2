@@ -1,6 +1,7 @@
 package main.java.assist;
 
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.apache.commons.compress.compressors.FileNameUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
@@ -30,9 +31,8 @@ public class  Util {
     }
 
 
-    public String captureScreenshot( WebDriver driver){
-//ExtentTest logger,
-            //logger.setDescription("function used for capturing screesnhot");
+    public String captureScreenshot( ExtentTest testLogger,WebDriver driver){
+
             String pathname=null;
             try{
                 //screenshot name
@@ -46,6 +46,8 @@ public class  Util {
                 File screenShotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
                 pathname="C:\\Users\\Rahul\\IdeaProjects\\SeleniumFrameWork\\src\\main\\java\\Screenshots\\"+Screenshotname+".png";
                 FileUtils.copyFile(screenShotFile, new File("C:\\Users\\Rahul\\IdeaProjects\\SeleniumFrameWork\\src\\main\\java\\Screenshots\\"+Screenshotname+".png"));
+                testLogger.log(Status.PASS,"Screenshot Taken successfully !");
+                testLogger.addScreencastFromPath(pathname);
 
                 /* FileInputStream fis=new FileInputStream(screenShotFile);
                 BufferedReader br=new BufferedReader(new InputStreamReader(fis));

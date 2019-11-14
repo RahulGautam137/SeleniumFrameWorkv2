@@ -16,7 +16,7 @@ public class ListenerImplementation extends BasePage implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
 
-        test.pass("Test case passed using Listener  "+result.getName());
+        testLogger.pass("Test case passed using Listener  "+result.getName());
 
 
 
@@ -25,11 +25,11 @@ public class ListenerImplementation extends BasePage implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result)  {
         try {
-            String path = util.captureScreenshot(driver);
-            test.pass(result.getName() + "Passing the function");
-            test.info("value of <img src='" + path + "'/>");
-            test.addScreenCaptureFromPath(path);
-            //test.addScreencast(path);
+            String path = util.captureScreenshot(testLogger,driver);
+            testLogger.pass(result.getName() + "Passing the function");
+            testLogger.info("value of <img src='" + path + "'/>");
+            testLogger.addScreenCaptureFromPath(path);
+            //testLogger.addScreencast(path);
             //logger.(test);
         }catch(Exception e){
             e.printStackTrace();
@@ -39,10 +39,10 @@ public class ListenerImplementation extends BasePage implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result){
         try {
-            String path = util.captureScreenshot(driver);
-            test.fail("Failed Test case " + result.getTestName());
-            test.addScreenCaptureFromPath(path);
-            //test.addScreencast(path);
+            String path = util.captureScreenshot(testLogger,driver);
+            testLogger.fail("Failed Test case " + result.getTestName());
+            testLogger.addScreenCaptureFromPath(path);
+            //testLogger.addScreencast(path);
             //logger.endTest(test);
         }catch(Exception e){
             e.printStackTrace();
