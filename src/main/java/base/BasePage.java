@@ -41,40 +41,7 @@ public class BasePage {
 
     public BasePage(){
 
-        try {
 
-            LocalDateTime ldt= LocalDateTime.now();
-            String getDatetime=ldt.toString();
-            getDatetime=getDatetime.replace('-','_').replace(':','_');
-            String dynamicPath="report"+getDatetime;
-
-            ExtentHtmlReporter avent = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\src\\main\\java\\report\\aventreports"+dynamicPath+".html");
-            extentRep = new ExtentReports();
-            extentRep.attachReporter(avent);
-            testLogger = extentRep.createTest("InitialiseVariables", "Initialising All Class variables");
-            frameHelper=new FrameHelper();
-            browserHelper=new BrowserHelper();
-            util = new Util();
-            reader=new ExcelReader();
-            config = new Properties();
-            objectRepos = new Properties();
-
-            FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//propertiesfiles//Config.properties");
-
-            FileInputStream fis2 = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//propertiesfiles//ObjectRepos.properties");
-            config.load(fis);
-            objectRepos.load(fis2);
-            testData = reader.getFileData("TestData.xlsx");
-
-
-            driver=browserHelper.startBrowser(testLogger,config.getProperty("browser"));
-            System.out.println(System.getProperty("user.dir"));
-
-        }catch (IOException ioexception){
-            ioexception.printStackTrace();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
 
     }
 
@@ -82,6 +49,41 @@ public class BasePage {
         @BeforeSuite
         public void setUp(){
 
+            try {
+
+                LocalDateTime ldt= LocalDateTime.now();
+                String getDatetime=ldt.toString();
+                getDatetime=getDatetime.replace('-','_').replace(':','_');
+                String dynamicPath="report"+getDatetime;
+
+                ExtentHtmlReporter avent = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\src\\main\\java\\report\\aventreports"+dynamicPath+".html");
+                extentRep = new ExtentReports();
+                extentRep.attachReporter(avent);
+                testLogger = extentRep.createTest("InitialiseVariables", "Initialising All Class variables");
+                frameHelper=new FrameHelper();
+                browserHelper=new BrowserHelper();
+                util = new Util();
+                reader=new ExcelReader();
+                config = new Properties();
+                objectRepos = new Properties();
+
+                FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//propertiesfiles//Config.properties");
+
+                FileInputStream fis2 = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//propertiesfiles//ObjectRepos.properties");
+                config.load(fis);
+                objectRepos.load(fis2);
+                testData = reader.getFileData("TestData.xlsx");
+
+                driver=browserHelper.startBrowser(testLogger,config.getProperty("browser"));
+                System.out.println("Check this ");
+
+                System.out.println(System.getProperty("user.dir"));
+
+            }catch (IOException ioexception){
+                ioexception.printStackTrace();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
 
 
 

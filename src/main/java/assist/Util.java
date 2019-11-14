@@ -44,8 +44,8 @@ public class  Util {
 
                 //taking screenshot
                 File screenShotFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-                pathname="C:\\Users\\Rahul\\IdeaProjects\\SeleniumFrameWork\\src\\main\\java\\Screenshots\\"+Screenshotname+".png";
-                FileUtils.copyFile(screenShotFile, new File("C:\\Users\\Rahul\\IdeaProjects\\SeleniumFrameWork\\src\\main\\java\\Screenshots\\"+Screenshotname+".png"));
+                pathname=System.getProperty("user.dir")+"\\src\\main\\java\\Screenshots\\"+Screenshotname+".png";
+                FileUtils.copyFile(screenShotFile, new File(System.getProperty("user.dir")+"\\src\\main\\java\\Screenshots\\"+Screenshotname+".png"));
                 testLogger.log(Status.PASS,"Screenshot Taken successfully !");
                 testLogger.addScreencastFromPath(pathname);
 
