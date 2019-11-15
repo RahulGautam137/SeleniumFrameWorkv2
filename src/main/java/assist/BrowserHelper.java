@@ -8,7 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -25,14 +27,23 @@ public class BrowserHelper {
             case "chrome"   :   System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//main//resources//chromedriver.exe");
                                 ChromeOptions options=new ChromeOptions();
                                 options.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
-                                //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//symatec.crx"));
+
+                                options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//AdBlock.crx"));
+                                 //DesiredCapabilities capabilities = new DesiredCapabilities();
+
+                                //capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                                 driver=new ChromeDriver(options);
 
 
                                 break;
 
-            case "firefox"  :   System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//src//main//resources//gecko.exe");
-                                driver=new FirefoxDriver();
+            case "firefox"  :   System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//src//main//resources//geckodriver.exe");
+                                FirefoxOptions frOptions=new FirefoxOptions();
+                                frOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
+                                frOptions.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT,true);
+                                frOptions.setCapability(CapabilityType.TAKES_SCREENSHOT,true);
+
+                                driver=new FirefoxDriver(frOptions);
 
                                 break;
 

@@ -6,8 +6,15 @@ import org.apache.commons.compress.compressors.FileNameUtil;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.io.*;
+import java.time.Duration;
 import java.time.LocalDateTime;
+import java.util.concurrent.TimeUnit;
 
 
 public class  Util {
@@ -69,6 +76,61 @@ public class  Util {
 
             }
             return pathname;
+    }
+
+    public void waitTillElementIsClickable(ExtentTest testLogger,WebDriver driver,WebElement webElement){
+        try{
+            long seconds=60;
+            WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
+            wait.until(ExpectedConditions.elementToBeClickable(webElement));
+
+            testLogger.info("Waiting for upto <b><"+seconds+"</b> for element to be clickable");
+
+        }catch (NoSuchElementException noElement){
+            testLogger.fail("No such Element found "+webElement);
+        } catch(Exception e){
+
+            testLogger.fail(e.getMessage());
+            e.printStackTrace();
+        }
+
+    }
+
+    public void waitTillElementIsVisible(ExtentTest testLogger,WebDriver driver,WebElement webElement){
+        try{
+            long seconds=60;
+            WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
+            wait.until(ExpectedConditions.visibilityOf(webElement));
+
+            testLogger.info("Waiting for upto <b><"+seconds+"</b> for element to be Visible");
+
+        }catch (NoSuchElementException noElement){
+            testLogger.fail("No such Element found "+webElement);
+        } catch(Exception e){
+
+            testLogger.fail(e.getMessage());
+            e.printStackTrace();
+        }
+
+    }
+
+    public void waitTillElementIsPresentOnPage(ExtentTest testLogger,WebDriver driver,By by){
+        try{
+            long seconds=60;
+
+            WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
+            wait.until(ExpectedConditions.presenceOfElementLocated(by));
+
+            testLogger.info("Waiting for upto <b><"+seconds+"</b> for element to be Present on Page");
+
+        }catch (NoSuchElementException noElement){
+            testLogger.fail("No such Element found "+by);
+        } catch(Exception e){
+
+            testLogger.fail(e.getMessage());
+            e.printStackTrace();
+        }
+
     }
 
 }

@@ -45,20 +45,33 @@ public class BasePage {
 
     }
 
-
-        @BeforeSuite
-        public void setUp(){
-
-            try {
+        public void reportConfig(){
+            try{
 
                 LocalDateTime ldt= LocalDateTime.now();
                 String getDatetime=ldt.toString();
                 getDatetime=getDatetime.replace('-','_').replace(':','_');
                 String dynamicPath="report"+getDatetime;
 
-                ExtentHtmlReporter avent = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\src\\main\\java\\report\\aventreports"+dynamicPath+".html");
+                ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(System.getProperty("user.dir")+"\\src\\main\\java\\report\\aventreports"+dynamicPath+".html");
+                htmlReporter.config().setDocumentTitle("EXtent");
+
                 extentRep = new ExtentReports();
-                extentRep.attachReporter(avent);
+                extentRep.attachReporter(htmlReporter);
+
+
+            }catch (Exception excp){
+                excp.printStackTrace();
+
+            }
+
+        }
+
+        @BeforeSuite
+        public void setUp(){
+
+            try {
+                reportConfig();
                 testLogger = extentRep.createTest("InitialiseVariables", "Initialising All Class variables");
                 frameHelper=new FrameHelper();
                 browserHelper=new BrowserHelper();
