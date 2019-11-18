@@ -16,6 +16,10 @@ import java.util.List;
 
 public class ExcelReader {
 
+    XSSFWorkbook testData;
+    XSSFSheet sheet1;
+
+
     public ArrayList<Object> getFileData(String fileName){
 
         try{
@@ -24,8 +28,10 @@ public class ExcelReader {
 
             FileInputStream fis=new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\resources\\"+fileName));
             if(fileName.endsWith(".xlsx")) {
-                XSSFWorkbook testData = new XSSFWorkbook(fis);
-                XSSFSheet sheet1 = testData.getSheetAt(0);
+
+                 testData = new XSSFWorkbook(fis);
+                 sheet1 = testData.getSheetAt(0);
+
                 int row = 0;
                 int col = 0;
 
@@ -79,11 +85,27 @@ public class ExcelReader {
         return null;
 
     }
+    public int getRowCount(){
+        try{
+            if(sheet1==null){
+                return -1;
+            }else{
+                System.out.println(sheet1.getLastRowNum()+1);
+                return sheet1.getLastRowNum()+1;
+            }
+
+        }catch(Exception e){
+            e.printStackTrace();
+            return -1;
+        }
+
+
+    }
 
     public HashMap getExcelDataAsMap(String fileName){
 
         try{
-
+/*
             HashMap<String,HashMap<String,String>> inputData=new HashMap<String,HashMap<String, String>>();
 
             FileInputStream fis=new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\resources\\"+fileName));
@@ -133,7 +155,7 @@ public class ExcelReader {
         }catch(FileNotFoundException f){
             System.out.println("Path is incorrect");
             //return data;
-
+*/
         }catch (Exception e){
             e.printStackTrace();
             System.out.println("Exception found"+e);
@@ -148,6 +170,7 @@ public class ExcelReader {
     public static void main(String[] args){
         ExcelReader excelReader=new ExcelReader();
         excelReader.getFileData("TestData.xlsx");
+        excelReader.getRowCount();
     }
 
 }
