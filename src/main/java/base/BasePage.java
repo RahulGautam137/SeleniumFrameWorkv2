@@ -106,7 +106,7 @@ public class BasePage {
         @AfterSuite
         public void tearDown(){
             if(driver!=null) {
-
+                System.out.println("Quiting the Browser");
                 extentRep.flush();
                 driver.quit();
             }

@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openxmlformats.schemas.drawingml.x2006.main.CTEffectStyleItem;
 
 import java.io.*;
 import java.time.Duration;
@@ -41,6 +42,7 @@ public class  Util {
     public String captureScreenshot( ExtentTest testLogger,WebDriver driver){
 
             String pathname=null;
+            System.out.println("Value of TestLogger "+testLogger+" Value of Driver "+driver);
             try{
                 //screenshot name
                 LocalDateTime ldt= LocalDateTime.now();
@@ -55,6 +57,7 @@ public class  Util {
                 FileUtils.copyFile(screenShotFile, new File(System.getProperty("user.dir")+"\\src\\main\\java\\Screenshots\\"+Screenshotname+".png"));
                 testLogger.log(Status.PASS,"Screenshot Taken successfully !");
                 testLogger.addScreencastFromPath(pathname);
+                System.out.println("Path Name in util "+pathname);
 
                 /* FileInputStream fis=new FileInputStream(screenShotFile);
                 BufferedReader br=new BufferedReader(new InputStreamReader(fis));
@@ -81,10 +84,11 @@ public class  Util {
     public void waitTillElementIsClickable(ExtentTest testLogger,WebDriver driver,WebElement webElement){
         try{
             long seconds=60;
+            //WebDriverWait wait=new WebDriverWait(driver, seconds);
             WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
             wait.until(ExpectedConditions.elementToBeClickable(webElement));
 
-            testLogger.info("Waiting for upto <b><"+seconds+"</b> for element to be clickable");
+            testLogger.info("Waiting for upto <b>"+seconds+"</b> for element to be clickable");
 
         }catch (NoSuchElementException noElement){
             testLogger.fail("No such Element found "+webElement);
@@ -95,11 +99,22 @@ public class  Util {
         }
 
     }
+    public void clickOnWebElement(ExtentTest testLogger, WebElement we){
+        try{
+            we.click();
+            testLogger.pass("WebElement "+we+" clicked Successfully!");
+
+        }catch(Exception e){
+            e.printStackTrace();
+            testLogger.fail(e.getMessage());
+        }
+    }
 
     public void waitTillElementIsVisible(ExtentTest testLogger,WebDriver driver,WebElement webElement){
         try{
             long seconds=60;
-            WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
+            //WebDriverWait wait=new WebDriverWait(driver, seconds);
+           WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
             wait.until(ExpectedConditions.visibilityOf(webElement));
 
             testLogger.info("Waiting for upto <b><"+seconds+"</b> for element to be Visible");
@@ -117,11 +132,11 @@ public class  Util {
     public void waitTillElementIsPresentOnPage(ExtentTest testLogger,WebDriver driver,By by){
         try{
             long seconds=60;
-
+           // WebDriverWait wait=new WebDriverWait(driver, seconds);
             WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
 
-            testLogger.info("Waiting for upto <b><"+seconds+"</b> for element to be Present on Page");
+            testLogger.info("Waiting for upto <b>"+seconds+"</b> for element to be Present on Page");
 
         }catch (NoSuchElementException noElement){
             testLogger.fail("No such Element found "+by);

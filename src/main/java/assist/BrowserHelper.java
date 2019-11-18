@@ -28,8 +28,10 @@ public class BrowserHelper {
                                 ChromeOptions options=new ChromeOptions();
                                 options.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
 
-                                options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//AdBlock.crx"));
-                                 //DesiredCapabilities capabilities = new DesiredCapabilities();
+                                //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//AdBlock.crx"));
+                                //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//WindowsAccount.crx"));
+                                DesiredCapabilities capabilities = new DesiredCapabilities();
+                                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 
                                 //capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                                 driver=new ChromeDriver(options);
