@@ -22,39 +22,47 @@ public class BrowserHelper {
 
     public WebDriver startBrowser(ExtentTest testlogger,String browserName){
 
-        switch(browserName){
+        try {
 
-            case "chrome"   :   System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//main//resources//chromedriver.exe");
-                                ChromeOptions options=new ChromeOptions();
-                                options.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
+            switch (browserName) {
 
-                                //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//AdBlock.crx"));
-                                //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//WindowsAccount.crx"));
-                                DesiredCapabilities capabilities = new DesiredCapabilities();
-                                capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+                case "chrome":
+                    System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "//src//main//resources//chromedriver.exe");
+                    ChromeOptions options = new ChromeOptions();
+                    options.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 
-                                //capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                                driver=new ChromeDriver(options);
+                    //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//AdBlock.crx"));
+                    //options.addExtensions(new File(System.getProperty("user.dir")+"//src//main//resources//WindowsAccount.crx"));
+                    DesiredCapabilities capabilities = new DesiredCapabilities();
+                    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+
+                    //capabilities.setCapability(ChromeOptions.CAPABILITY, options);
+                    driver = new ChromeDriver(options);
 
 
-                                break;
+                    break;
 
-            case "firefox"  :   System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"//src//main//resources//geckodriver.exe");
-                                FirefoxOptions frOptions=new FirefoxOptions();
-                                frOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS,true);
-                                frOptions.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT,true);
-                                frOptions.setCapability(CapabilityType.TAKES_SCREENSHOT,true);
+                case "firefox":
+                    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "//src//main//resources//geckodriver.exe");
+                    FirefoxOptions frOptions = new FirefoxOptions();
+                    frOptions.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
+                    frOptions.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
+                    frOptions.setCapability(CapabilityType.TAKES_SCREENSHOT, true);
 
-                                driver=new FirefoxDriver(frOptions);
+                    driver = new FirefoxDriver(frOptions);
 
-                                break;
+                    break;
 
+            }
+            testlogger.info(browserName + " Browser initiated");
+            System.out.println(browserName + " Browser initiated");
+            driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+            driver.manage().window().maximize();
+        }catch(Exception e){
+            e.printStackTrace();
+            testlogger.fail(e.getMessage());
         }
-        testlogger.info(browserName +" Browser initiated");
-        System.out.println(browserName+" Browser initiated");
-        driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        driver.manage().window().maximize();
 
         return driver;
 
