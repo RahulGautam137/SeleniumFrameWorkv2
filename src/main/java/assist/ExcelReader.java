@@ -187,7 +187,7 @@ public class ExcelReader {
 
     //public int getIndex
 
-    public HashMap getExcelDataAsMap(String fileName,String sheetName,String startCell,String endingCell){
+    public HashMap getExcelDataAsMap(String fileName,String sheetName,String startDataCell,String endingDataCell){
 
         try{
 
@@ -203,14 +203,14 @@ public class ExcelReader {
                     for(int i=0;i<row;i++){
                         //Row r=testSheet.getRow(i);
 
-                        if(startCell.equalsIgnoreCase(getCellData(i+1,1))){
+                        if(startDataCell.equalsIgnoreCase(getCellData(i+1,1))){
                             testDataStartRow=i;
                         }
 
 
                         /*for(int j=0;j<col;j++){
                                 cellItr=r.getCell(j);
-                            if(startCell.equalsIgnoreCase(getCellData(i,j))){
+                            if(startDataCell.equalsIgnoreCase(getCellData(i,j))){
                                 testDataStartRow=i;
                             }
                         }
@@ -220,14 +220,48 @@ public class ExcelReader {
                 for(int i=0;i<row;i++) {
                     //Row r = testSheet.getRow(i);
                     String Compare=getCellData(i+1, 1);
-                    System.out.println("Value of Compare "+Compare);
-                    if (endingCell.equalsIgnoreCase(Compare)) {
+                    //System.out.println("Value of Compare "+Compare);
+                    if (endingDataCell.equalsIgnoreCase(Compare)) {
                         testDataEndRow = i;
 
                     }
                 }
 
                 System.out.println("Start row is "+ testDataStartRow+" ENding row as "+testDataEndRow);
+
+
+                String rowHeader=null;
+                for(int rowStart=testDataStartRow+1;rowStart<testDataEndRow;rowStart++){
+                    dataMap=new HashMap<String,String>();
+
+                    Row tempRow=testSheet.getRow(rowStart);
+                    int cellEnd=tempRow.getLastCellNum()+1;
+                    Cell tempCell;
+                    String tempData=null;
+                    String tempkey=null;
+
+                    for(int cellStart=2;cellStart<cellEnd;cellStart++){
+                        tempkey= getCellData(testDataStartRow+1,cellStart);
+                        tempData=getCellData(rowStart+1,cellStart);
+
+
+                        //System.out.println("Value of Tempdata "+tempData);
+                        if(!tempData.equalsIgnoreCase("")){
+                            System.out.println("value of Temp Key "+tempkey+" Value of Tempdata "+tempData);
+                            dataMap.put(tempkey,tempData);
+                        }
+                    }
+                   // System.out.println("Value of KEY "+getCellData(rowStart+1,1));
+                    inputData.put(getCellData(rowStart+1,1),dataMap);
+
+
+                }
+
+                    System.out.println("Value test "+inputData.get("invalidLogin").get("AdminPassword"));
+
+
+
+
 
 
 
@@ -254,10 +288,11 @@ public class ExcelReader {
         excelReader.initializeFile("TestData.xlsx");
         excelReader.initializeSheet("test_data");
         excelReader.getRowCount();
-        excelReader.getExcelDataAsMap("TestData.xlsx","test_data","TestData3","EndData3");
+        excelReader.getExcelDataAsMap("TestData.xlsx","test_data","TestData1","EndData1");
         System.out.println("Value of Columns in 2 row "+excelReader.getColCount(2));
         String value=excelReader.getCellData(4,15);
         System.out.println("Value of String "+value);
+
     }
 
 }
