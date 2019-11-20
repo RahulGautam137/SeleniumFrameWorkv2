@@ -85,7 +85,7 @@ public class BasePage {
                 FileInputStream fis2 = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//propertiesfiles//ObjectRepos.properties");
                 config.load(fis);
                 objectRepos.load(fis2);
-                testData = reader.getFileData("TestData.xlsx");
+                testData = reader.getFileDataAsList("TestData.xlsx");
 
                 driver=browserHelper.startBrowser(testLogger,config.getProperty("browser"));
                 System.out.println("Check this ");
