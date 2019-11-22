@@ -274,7 +274,7 @@ public class ExcelReader {
 
 
 
-
+                closeWorkBook();
 
 
 
@@ -295,7 +295,7 @@ public class ExcelReader {
 
 
     }
-    public void CloseWorkBook(){
+    public void closeWorkBook(){
         try {
             fis.close();
             testDataWorkBook.close();
