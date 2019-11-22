@@ -1,6 +1,9 @@
 package main.java.assist;
 
+import org.apache.poi.ss.format.CellFormatType;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.streaming.SXSSFRow;
 import org.apache.poi.xssf.usermodel.*;
@@ -11,6 +14,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.SQLOutput;
 import java.util.*;
+
+import static org.apache.poi.ss.usermodel.CellType.*;
 
 public class ExcelReader {
 
@@ -143,10 +148,17 @@ public class ExcelReader {
                         case STRING:
                             dataValue = cellCounter.getStringCellValue();
                             break;
-
                         case NUMERIC:
-                            Date d = cellCounter.getDateCellValue();
-                            dataValue = d.toString();
+                            boolean check=DateUtil.isCellDateFormatted(cellCounter);
+                            if(check) {
+                                Date d = cellCounter.getDateCellValue();
+                                dataValue = d.toString();
+
+                            }else{
+                                int a=(int)cellCounter.getNumericCellValue();
+                                dataValue= String.valueOf(a);
+
+                            }
                             break;
 
                         case BOOLEAN:
