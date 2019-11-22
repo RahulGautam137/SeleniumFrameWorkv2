@@ -23,6 +23,7 @@ public class ExcelReader {
     XSSFSheet testSheet;
     HashMap<String,HashMap<String,String>> inputData;
     HashMap<String,String> dataMap;
+    FileInputStream fis;
 
 
 
@@ -32,7 +33,7 @@ public class ExcelReader {
 
             ArrayList<Object> data=new ArrayList<Object>();
 
-            FileInputStream fis=new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\resources\\"+fileName));
+                fis=new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\resources\\"+fileName));
             if(fileName.endsWith(".xlsx")) {
 
                 testDataWorkBook = new XSSFWorkbook(fis);
@@ -109,7 +110,7 @@ public class ExcelReader {
     }
     public void initializeFile(String fileName){
         try{
-            FileInputStream fis=new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\resources\\"+fileName));
+            fis=new FileInputStream(new File(System.getProperty("user.dir")+"\\src\\main\\resources\\"+fileName));
             testDataWorkBook=new XSSFWorkbook(fis);
         }catch(IOException ioexp){
             ioexp.printStackTrace();
@@ -291,6 +292,18 @@ public class ExcelReader {
         }
 
         return null;
+
+
+    }
+    public void CloseWorkBook(){
+        try {
+            fis.close();
+            testDataWorkBook.close();
+        }catch (IOException io){
+            io.printStackTrace();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
 
 
     }
