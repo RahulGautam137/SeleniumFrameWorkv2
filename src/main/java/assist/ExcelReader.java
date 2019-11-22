@@ -198,6 +198,7 @@ public class ExcelReader {
 
     }
 
+
     //public int getIndex
 
     public HashMap getExcelDataAsMap(String fileName,String sheetName,String startDataCell,String endingDataCell){
