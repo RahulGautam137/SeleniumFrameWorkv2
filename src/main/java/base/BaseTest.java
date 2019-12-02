@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class BaseTest extends BasePage{
 
-
+ int counter=0;
     @Test(retryAnalyzer = RetryClass.class)
     public void LoginAsBankManger(){
 
@@ -29,7 +29,8 @@ public class BaseTest extends BasePage{
             WebElement customerLogin=driver.findElement(By.xpath(objectRepos.getProperty("customerLoginBtn")));
             util.waitTillElementIsClickable(testLogger,driver,customerLogin);
             util.clickOnWebElement(testLogger,customerLogin);
-
+            counter++;
+            System.out.println("Valkue of counter "+counter);
             Thread.sleep(4000);
             testLogger.pass("Passing this test case");
             Random r=new Random();
