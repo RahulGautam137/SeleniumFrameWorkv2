@@ -3,6 +3,7 @@ package main.java.base;
 import com.aventstack.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.LogStatus;
+import main.java.assist.RetryClass;
 import main.java.assist.Util;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -10,10 +11,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.internal.thread.ThreadExecutionException;
 
+import java.util.Random;
+
 public class BaseTest extends BasePage{
 
 
-    @Test
+    @Test(retryAnalyzer = RetryClass.class)
     public void LoginAsBankManger(){
 
     try {
@@ -26,8 +29,14 @@ public class BaseTest extends BasePage{
             WebElement customerLogin=driver.findElement(By.xpath(objectRepos.getProperty("customerLoginBtn")));
             util.waitTillElementIsClickable(testLogger,driver,customerLogin);
             util.clickOnWebElement(testLogger,customerLogin);
+
             Thread.sleep(4000);
             testLogger.pass("Passing this test case");
+            Random r=new Random();
+            int t=r.nextInt(2);
+            System.out.println("Value of t"+t) ;
+            Assert.assertEquals(1,t);
+
             //util.captureScreenshot(testLogger,driver);
 
 
