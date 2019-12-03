@@ -13,6 +13,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openxmlformats.schemas.drawingml.x2006.main.CTEffectStyleItem;
 
 import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
@@ -147,5 +151,65 @@ public class  Util {
         }
 
     }
+
+    public String getAttributeOfWebElement(ExtentTest testLogger,WebElement webEle,String getAttributeValue){
+        try{
+            String attributeValue=null;
+            attributeValue=webEle.getAttribute(getAttributeValue);
+            testLogger.info("Value of Attribute is "+attributeValue);
+            return attributeValue;
+
+
+        }catch(Exception e){
+            e.printStackTrace();
+            testLogger.fail(e.getMessage());
+
+        }
+        return null;
+    }
+
+    public void detecBrokenLink(ExtentTest testLogger,WebElement link){
+        try{
+            String url=getAttributeOfWebElement(testLogger,link,"href");
+            if(url==null ||url.isEmpty()){
+                testLogger.fail("link has not been configured or is empty");
+            }
+            HttpURLConnection huc=null;
+            int respCode=200;
+
+            huc = (HttpURLConnection)(new URL(url).openConnection());
+
+            huc.setRequestMethod("HEAD");
+
+            huc.connect();
+
+            respCode = huc.getResponseCode();
+
+            if(respCode >= 400){
+                testLogger.fail(url+" is a broken link");
+                System.out.println(url+" is a broken link");
+            }
+            else{
+                testLogger.pass(url+" is a valid link");
+                System.out.println(url+" is a valid link");
+            }
+
+        }
+        catch (ProtocolException e) {
+            e.printStackTrace();
+            testLogger.fail(e.getMessage());
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+            testLogger.fail(e.getMessage());
+        } catch (IOException e) {
+            e.printStackTrace();
+            testLogger.fail(e.getMessage());
+        }catch (Exception e){
+            e.printStackTrace();
+            testLogger.fail(e.getMessage());
+
+        }
+    }
+
 
 }
